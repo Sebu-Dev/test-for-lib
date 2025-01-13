@@ -1,12 +1,9 @@
-import { Layout } from "sebu-dev-lib";
-
+import { Layout } from "react-component-library";
 export function App() {
   return (
     <>
-      <div className="text-red-400">JALLLASODOASFO</div>
-      <Layout>
-        <div>HALLLO</div>
-      </Layout>
+      <div className="bg-red-500">test tailwind</div>
+      <Layout>{<div>HALLO TEST!</div>}</Layout>
     </>
   );
 }

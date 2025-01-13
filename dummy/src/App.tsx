@@ -1,4 +1,4 @@
-import { Layout } from "react-component-library";
+import { Layout } from "sebu-dev-react-lib";
 export function App() {
   return (
     <>

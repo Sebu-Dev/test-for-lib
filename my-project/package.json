@@ -13,7 +13,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
-    "sebu-dev-react-lib": "file:../../npm-packages/sebu-dev-react-lib",
+    "sebu-dev-react-lib": "^0.0.3",
     "vite-typescript-npm-package": "file:../../git_npm/vite-typescript-npm-package"
   },
   "devDependencies": {

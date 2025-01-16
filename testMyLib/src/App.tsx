@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BiAccessibility } from "react-icons/bi";
+import { BaseButtonDocumentation } from "./components/BaseButtonDokumentation";
 import {
   BaseButton,
   ButtonCyan,
@@ -24,9 +25,10 @@ function App() {
   return (
     <>
       <Layout>
+        <BaseButtonDocumentation></BaseButtonDocumentation>
         <div>
           <ButtonCyan handleOnClick={() => true} label="TEST THIS BUTTON" />
-          <Card themeMode="dark" title="CARD">
+          <Card themeMode="light" title="CARD">
             <div className="flex flex-col">
               <BaseButton
                 handleOnClick={() => handleButtonClick("Base Button Clicked")}
@@ -34,6 +36,10 @@ function App() {
               />
               <DangerButton
                 handleOnClick={() => handleButtonClick("Danger Button Clicked")}
+                animationOnClick
+                tapEffect={{ scale: 0.9999 }}
+                hoverEffect={{ scale: 1.01 }}
+                animationHover
                 label="Danger Button"
               />
               <IconButton

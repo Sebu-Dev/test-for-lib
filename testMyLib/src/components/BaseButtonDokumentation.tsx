@@ -9,11 +9,11 @@ export const BaseButtonDocumentation = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">BaseButton Dokumentation</h1>
+      <h1 className="mb-4 font-bold text-2xl">BaseButton Dokumentation</h1>
 
       <Card>
-        <div className="grid lg:grid-cols-5 grid-cols sm:grid-cols-2 md:grid-cols-3">
-          <section className="mb-6 ">
+        <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <section className="mb-6">
             <BaseButton
               handleOnClick={handleClick("Standard Button geklickt!")}
             >
@@ -57,14 +57,13 @@ export const BaseButtonDocumentation = () => {
           <section className="mb-6">
             <BaseButton
               handleOnClick={handleClick("Button  custom className geklickt!")}
-              className="bg-blue-500 text-white hover:bg-blue-700"
+              className="bg-blue-500 hover:bg-blue-700 text-white"
               label=" Custom className"
             />
           </section>
           <section className="mb-6">
             <BaseButton
               handleOnClick={handleClick("Button  custom color geklickt!")}
-              bgColor="bg-red-400"
               label=" Custom Color"
             />
           </section>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BiAccessibility } from "react-icons/bi";
-import { BaseButtonDocumentation } from "./components/BaseButtonDokumentation";
 import {
   BaseButton,
   ButtonCyan,
@@ -10,8 +9,9 @@ import {
   InputField,
   Layout,
   PrimaryButton,
-} from "/Users/vwbspk0/Desktop/VsCode/npm-packages/sebu-dev-react-lib";
-import "/Users/vwbspk0/Desktop/VsCode/npm-packages/sebu-dev-react-lib/dist/sebu-dev-react-lib.css";
+} from "sebu-dev-react-lib";
+import "sebu-dev-react-lib/dist/sebu-dev-react-lib.css";
+import { BaseButtonDocumentation } from "./components/BaseButtonDokumentation";
 
 function App() {
   const handleButtonClick = (message: string) => {
@@ -37,14 +37,24 @@ function App() {
               <DangerButton
                 handleOnClick={() => handleButtonClick("Danger Button Clicked")}
                 animationOnClick
-                tapEffect={{ scale: 0.9999 }}
-                hoverEffect={{ scale: 1.01 }}
                 animationHover
+                glowEffect
+                tapEffect={{ scale: 1.2 }}
                 label="Danger Button"
+              />
+              <DangerButton
+                handleOnClick={() => handleButtonClick("Danger Button Clicked")}
+                animationOnClick
+                animationHover
+                glowEffect
+                tapEffect={{ scale: 1.2 }}
+                label="Danger Button Glow"
               />
               <IconButton
                 handleOnClick={() => handleButtonClick("Icon Button Clicked")}
+                className=""
                 textColor="text-cyan-500"
+                size="text-8xl"
                 icon={<BiAccessibility />}
               />
               <PrimaryButton
@@ -53,6 +63,13 @@ function App() {
                 }
                 label="Primary Button"
               />
+
+              <PrimaryButton
+                animationHover
+                glowEffect
+                label="Primary Button Glow"
+              />
+
               <InputField
                 value={inputValue}
                 onChange={handleInputChange}
